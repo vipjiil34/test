@@ -1,0 +1,291 @@
+<챗봇에게 코딩 질문하기>
+질문)우리기관을 홍보하는 웹앱을 만들어줘. 우리기관은 경기도청으로 2024년도 페스티벌을 확인하여 2025년 월별로 만들어줘. UI는 bootstrap을 사용해서 반응형웹으로 작성해줘.
+
+답변)
+경기도청의 2025년도 월별 페스티벌을 홍보하는 웹앱을 만들기 위해 아래의 단계를 따를 것입니다. 이 웹앱은 부트스트랩을 사용해 반응형으로 만들고, 각 월별로 페스티벌 정보를 표시할 수 있는 페이지를 구성합니다.
+
+1. 프로젝트 구조 설정
+코드 복사
+경기도청_웹앱/
+│
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── scripts.js
+└── images/
+    └── logo.png
+2. index.html 작성
+html
+코드 복사
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경기도청 2025 페스티벌</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="경기도청 로고" width="30" height="30">
+            경기도청 2025 페스티벌
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#january">1월</a></li>
+                <li class="nav-item"><a class="nav-link" href="#february">2월</a></li>
+                <li class="nav-item"><a class="nav-link" href="#march">3월</a></li>
+                <!-- 각 월별로 추가 -->
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center">2025년 경기도청 페스티벌</h1>
+        <p class="text-center">경기도청에서 주최하는 월별 페스티벌을 확인하세요!</p>
+
+        <!-- 1월 -->
+        <div id="january" class="my-5">
+            <h2>1월 페스티벌</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">새해맞이 축제</h5>
+                    <p class="card-text">2025년 1월 1일 - 1월 5일</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2월 -->
+        <div id="february" class="my-5">
+            <h2>2월 페스티벌</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">정월 대보름 축제</h5>
+                    <p class="card-text">2025년 2월 10일 - 2월 12일</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 다른 월별 페스티벌 추가 -->
+
+    </div>
+
+    <footer class="footer bg-light text-center py-3">
+        <p>© 2024 경기도청. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+3. css/styles.css 작성
+css
+코드 복사
+body {
+    padding-top: 56px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+4. js/scripts.js 작성
+js
+코드 복사
+// 필요시 추가적인 JavaScript 코드 작성
+위의 코드는 기본적인 HTML 구조와 부트스트랩을 활용한 반응형 웹 UI를 포함합니다. 각 월별 페스티벌 정보는 index.html 파일 내에 추가할 수 있습니다. 필요에 따라 css/styles.css와 js/scripts.js 파일을 수정해 스타일과 기능을 추가할 수 있습니다.
+
+경기도청 로고 이미지(images/logo.png)는 경기도청의 실제 로고 이미지 파일을 해당 경로에 저장하여 사용하면 됩니다.
+
+
+
+
+
+
+나의 말:
+위의 제목과 부제목을 박스로 처리하고 색상을 연두색으로 해줘
+ChatGPT의 말:
+ChatGPT
+제목과 부제목을 박스로 처리하고 색상을 연두색으로 변경하기 위해 index.html과 css/styles.css 파일을 수정합니다.
+
+1. index.html 수정
+html
+코드 복사
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경기도청 2025 페스티벌</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="경기도청 로고" width="30" height="30">
+            경기도청 2025 페스티벌
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#january">1월</a></li>
+                <li class="nav-item"><a class="nav-link" href="#february">2월</a></li>
+                <li class="nav-item"><a class="nav-link" href="#march">3월</a></li>
+                <!-- 각 월별로 추가 -->
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="box">
+            <h1 class="text-center">2025년 경기도청 페스티벌</h1>
+            <p class="text-center">경기도청에서 주최하는 월별 페스티벌을 확인하세요!</p>
+        </div>
+
+        <!-- 1월 -->
+        <div id="january" class="my-5">
+            <h2>1월 페스티벌</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">새해맞이 축제</h5>
+                    <p class="card-text">2025년 1월 1일 - 1월 5일</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2월 -->
+        <div id="february" class="my-5">
+            <h2>2월 페스티벌</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">정월 대보름 축제</h5>
+                    <p class="card-text">2025년 2월 10일 - 2월 12일</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 다른 월별 페스티벌 추가 -->
+
+    </div>
+
+    <footer class="footer bg-light text-center py-3">
+        <p>© 2024 경기도청. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+2. css/styles.css 수정
+css
+코드 복사
+body {
+    padding-top: 56px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.box {
+    background-color: #dff0d8; /* 연두색 배경 */
+    border: 1px solid #d6e9c6; /* 연두색 테두리 */
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+이제 box 클래스를 추가하여 제목과 부제목을 연두색 박스로 감쌌습니다. css/styles.css 파일의 box 클래스에서 배경색과 테두리 색상을 설정했으며, 패딩과 모서리 반경을 추가하여 시각적으로 더 보기 좋게 만들었습니다.
+
+1)W3school 에서 테스트해보기
+  - 접속) https://www.w3schools.com/html/default.asp 
+  - html > 본문 스크롤 내리다 보면 "Try it Yourself>>"  클릭
+  - 챗봇의 본문을 복사하여 붙여넣기하고 "Run" 클릭, 우측에 화면으로 보여줌
+2) 깃허브에서 테스트하기
+  - 로그인하여 좌측메뉴에서 "새노트" 클릭
+  -  https://github.com/vipjiil34/test1008 
+
+-----------------------
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경기도청 2025 페스티벌</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="경기도청 로고" width="30" height="30">
+            경기도청 2025 페스티벌
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#january">1월</a></li>
+                <li class="nav-item"><a class="nav-link" href="#february">2월</a></li>
+                <li class="nav-item"><a class="nav-link" href="#march">3월</a></li>
+                <!-- 각 월별로 추가 -->
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center">2025년 경기도청 페스티벌</h1>
+        <p class="text-center">경기도청에서 주최하는 월별 페스티벌을 확인하세요!</p>
+
+        <!-- 1월 -->
+        <div id="january" class="my-5">
+            <h2>1월 페스티벌</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">새해맞이 축제</h5>
+                    <p class="card-text">2025년 1월 1일 - 1월 5일</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2월 -->
+        <div id="february" class="my-5">
+            <h2>2월 페스티벌</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">정월 대보름 축제</h5>
+                    <p class="card-text">2025년 2월 10일 - 2월 12일</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 다른 월별 페스티벌 추가 -->
+
+    </div>
+
+    <footer class="footer bg-light text-center py-3">
+        <p>© 2024 경기도청. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
